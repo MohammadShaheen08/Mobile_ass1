@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/backass"
+    >
+
+    <ScrollView
+        android:layout_width="365dp"
+        android:layout_height="581dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginRight="50dp">
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/statement1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text_statement1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Water (H₂O) - composed of hydrogen (H₂) and oxygen (O₂)" />
+
+                <Spinner
+                    android:id="@+id/spinner_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/choices" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/statement2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text_statement2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Carbon dioxide (CO₂) - composed of carbon (C) and oxygen (O₂)" />
+
+                <Spinner
+                    android:id="@+id/spinner_statement2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/choices" />
+            </LinearLayout>
+
+
+
+            <Button
+                android:id="@+id/button_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Check Answers" />
+
+            <TextView
+                android:id="@+id/text_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
